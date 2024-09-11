@@ -29,6 +29,7 @@ export default function VehicleCanvas() {
     };
 
     const getPosition = (event) => {
+    //   const canvasBounds = canvas.getBoundingClientRect();
       coord.current.x = event.clientX - canvas.offsetLeft;
       coord.current.y = event.clientY - canvas.offsetTop;
     };
@@ -83,11 +84,13 @@ export default function VehicleCanvas() {
 
   return (
     <>
-      <span className="">Prior Body Damage</span>
+      <span className="bg-black text-white">
+        Prior Body Damage (draw with mouse)
+      </span>
       <canvas
         ref={canvasRef}
         id="canvas"
-        className="border w-1/3 h-1/2"
+        className="border w-100 h-auto"
       ></canvas>
       <button onClick={clearCanvas} className="border">
         Clear

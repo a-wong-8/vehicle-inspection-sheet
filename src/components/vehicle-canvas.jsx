@@ -29,7 +29,7 @@ export default function VehicleCanvas() {
     };
 
     const getPosition = (event) => {
-    //   const canvasBounds = canvas.getBoundingClientRect();
+      //   const canvasBounds = canvas.getBoundingClientRect();
       coord.current.x = event.clientX - canvas.offsetLeft;
       coord.current.y = event.clientY - canvas.offsetTop;
     };
@@ -90,7 +90,7 @@ export default function VehicleCanvas() {
       <canvas
         ref={canvasRef}
         id="canvas"
-        className="border w-100 h-auto"
+        className="border"
       ></canvas>
       <button onClick={clearCanvas} className="border">
         Clear

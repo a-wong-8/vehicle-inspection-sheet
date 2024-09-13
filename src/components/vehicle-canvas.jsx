@@ -92,7 +92,7 @@ export default function VehicleCanvas() {
         id="canvas"
         className="border"
       ></canvas>
-      <button onClick={clearCanvas} className="border">
+      <button onClick={clearCanvas} className="border p-1 w-20 rounded-xl border-black shadow-md">
         Clear
       </button>
     </>

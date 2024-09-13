@@ -14,12 +14,12 @@ export default function Navbar() {
       const imgData = canvas.toDataURL('image/png');
       const pdf = new jsPDF();
       pdf.addImage(imgData, 'PNG', 0, 0);
-      pdf.save(`${repairOrder}-sheet-${date}.pdf`); 
-      window.alert(`Saved to PDF as '${repairOrder}-sheet-${date}.pdf'`)
+      // pdf.save(`${repairOrder}-sheet-${date}.pdf`); 
+      // window.alert(`Saved to PDF as '${repairOrder}-sheet-${date}.pdf'`)
     });
   };
 
-  const repairOrder = document.querySelector('#ro');
+  // const repairOrder = document.querySelector('#ro').value;
 
   return (
     <nav className="border-b flex justify-between">

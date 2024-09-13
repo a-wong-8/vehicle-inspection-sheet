@@ -10,15 +10,16 @@ export default function Navbar() {
 
   const save = () => {
     const input = document.querySelector('body'); 
-    // Specify the id of the element you want to convert to PDF
     html2canvas(input).then((canvas) => {
       const imgData = canvas.toDataURL('image/png');
       const pdf = new jsPDF();
       pdf.addImage(imgData, 'PNG', 0, 0);
-      pdf.save(`inspection-sheet-${date}.pdf`); 
-      window.alert("Saved to PDF")
+      pdf.save(`${repairOrder}-sheet-${date}.pdf`); 
+      window.alert(`Saved to PDF as '${repairOrder}-sheet-${date}.pdf'`)
     });
   };
+
+  const repairOrder = document.querySelector('#ro');
 
   return (
     <nav className="border-b flex justify-between">

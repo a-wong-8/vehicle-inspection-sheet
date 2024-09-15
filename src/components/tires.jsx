@@ -10,7 +10,7 @@ export default function TiresAndBrakes() {
       <section className="flex flex-wrap">
         {quadrants.map((wheel) => (
           <div className="border w-full basis-1/2">
-            <span className="font-bold">{wheel}</span>
+            <span className="font-bold border w-full flex bg-gray-200 justify-center border-black">{wheel}</span>
             <div className="flex">
               <div className="bg-green-500 h-6 w-7">
                 <input type="checkbox" className="scale-125" />
@@ -33,7 +33,7 @@ export default function TiresAndBrakes() {
                   <option>7</option>
                   <option>8</option>
                   <option>9</option>
-                  <option>10</option>
+                  <option selected>10</option>
                   
                 </select> mm
               </label>
@@ -61,7 +61,7 @@ export default function TiresAndBrakes() {
                   <option>7</option>
                   <option>8</option>
                   <option>9</option>
-                  <option>10</option>
+                  <option selected>10</option>
                   <option>11</option>
                 </select>{" "}
                 /32"
@@ -79,7 +79,7 @@ export default function TiresAndBrakes() {
                 <input type="checkbox" className="scale-125" />
               </div>
               <label className="ml-1">
-                Wear Pattern
+                Wear
                 <select className="border ml-2">
                   <option>Even</option>
                   <option>Toe</option>
@@ -89,7 +89,7 @@ export default function TiresAndBrakes() {
             </div>
 
             <div>
-              <label>Tire Pressure: PSI / BAR</label>
+              <label>Tire Pressure</label>
               <br />
               <label>Before: </label>
               <input type="text" className="border w-10 mr-2" />

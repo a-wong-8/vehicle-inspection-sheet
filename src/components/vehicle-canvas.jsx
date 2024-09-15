@@ -83,8 +83,8 @@ export default function VehicleCanvas() {
   };
 
   return (
-    <>
-      <span className="bg-black text-white">
+    <div className="w-[70rem] mx-auto border pb-2">
+      <span className="bg-black text-white w-full flex justify-center">
         Prior Body Damage (draw with mouse)
       </span>
       <canvas
@@ -92,9 +92,9 @@ export default function VehicleCanvas() {
         id="canvas"
         className="border"
       ></canvas>
-      <button onClick={clearCanvas} className="border p-1 w-20 rounded-xl border-black shadow-md">
+      <button onClick={clearCanvas} className="border p-1 m-2 w-20 rounded-xl border-black shadow-md">
         Clear
       </button>
-    </>
+    </div>
   );
 }

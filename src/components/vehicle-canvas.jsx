@@ -23,8 +23,8 @@ export default function VehicleCanvas() {
 
     // Resize canvas to fit the window
     const resize = () => {
-      ctx.canvas.width = 500;
-      ctx.canvas.height = 300;
+      ctx.canvas.width = 450;
+      ctx.canvas.height = 250;
       drawImage();
     };
 
@@ -83,14 +83,14 @@ export default function VehicleCanvas() {
   };
 
   return (
-    <div className="w-[70rem] mx-auto border pb-2">
+    <div className="w-full mx-auto border">
       <span className="bg-black text-white w-full flex justify-center">
         Prior Body Damage (draw with mouse)
       </span>
       <canvas
         ref={canvasRef}
         id="canvas"
-        className="border"
+        className="mx-auto rounded-md"
       ></canvas>
       <button onClick={clearCanvas} className="border p-1 m-2 w-20 rounded-xl border-black shadow-md">
         Clear

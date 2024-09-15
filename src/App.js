@@ -6,6 +6,7 @@ import VehicleCanvas from "./components/vehicle-canvas";
 import VehicleInfo from "./components/vehicle-info";
 import mpi from "./assets/mpi";
 import Notes from "./components/notes";
+import TiresAndBrakes from "./components/tires";
 
 function App() {
   return (
@@ -16,15 +17,19 @@ function App() {
         <VehicleInfo />
       </div>
 
-      <div>
+      <div className="w-[70rem] mx-auto flex">
         <VehicleCanvas />
+        <TiresAndBrakes/>
+      </div>
+
+      <div className="">
       </div>
 
       <div className="flex flex-wrap w-[70rem] mx-auto">
-        {mpi.map((item) =>
+        {mpi.map((item, index) =>
           typeof item !== "object" ? (
             <div className="flex mx-0 basis-1/3">
-              <CheckBoxes item={item} />
+              <CheckBoxes item={item} key={index} />
             </div>
           ) : (
             <>

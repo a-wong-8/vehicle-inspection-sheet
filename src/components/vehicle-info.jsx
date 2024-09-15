@@ -1,6 +1,6 @@
 export default function VehicleInfo() {
   return (
-    <form className="border w-[70rem] py-4 my-4 mx-auto">
+    <form className="border w-[70rem] py-4 mx-auto">
       <label for="" className="pl-4">
         Dealer Name:{" "}
       </label>

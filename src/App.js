@@ -27,9 +27,9 @@ function App() {
         <VehicleCanvas />
 
         <section className="flex flex-wrap">
-          <span className="bg-black text-white w-full flex justify-center border">
+          <h2 className="bg-black text-white w-full flex justify-center border">
             Brakes and Tires
-          </span>
+          </h2>
           {quadrants.map((wheel) => (
             <TiresAndBrakes wheel={wheel} />
           ))}
@@ -44,9 +44,9 @@ function App() {
             </div>
           ) : (
             <>
-              <span className="flex basis 1/3 mx-0 bg-black text-white w-full justify-center">
+              <h2 className="flex basis 1/3 mx-0 bg-black text-white w-full justify-center">
                 {Object.values(item)}
-              </span>
+              </h2>
               <br />
             </>
           )

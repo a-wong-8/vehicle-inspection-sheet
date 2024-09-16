@@ -82,9 +82,9 @@ export default function VehicleCanvas() {
 
   return (
     <div className="w-full mx-auto border">
-      <span className="bg-black text-white w-full flex justify-center">
+      <h2 className="bg-black text-white w-full flex justify-center">
         Prior Body Damage (Draw with mouse)
-      </span>
+      </h2>
       <canvas
         ref={canvasRef}
         id="canvas"

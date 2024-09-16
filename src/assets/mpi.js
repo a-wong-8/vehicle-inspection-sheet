@@ -1,6 +1,6 @@
 const mpi = [
   {1: "Interior / Exterior"},
-  "Head Lights, Tail Lights, Turn Signals, Brake Lights Hazard Lights, Exterior Lamps, License Plate Lights",
+  "Head Lights, Tail Lights, Turn Signals, Brake Lights, Hazard Lights, Exterior Lamps, License Plate Lights",
   "Windshield Washer/Wiper Operation Wiper Blades",
   "Windshield Condition: Cracks / Chips / Pitting",
   "Mirrors / Glass",

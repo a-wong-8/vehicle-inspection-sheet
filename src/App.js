@@ -37,7 +37,7 @@ function App() {
         </section>
       </div>
 
-      <div className="flex flex-wrap w-[70rem] mx-auto">
+      <div className="flex flex-wrap w-[70rem] mx-auto rounded-lg">
         {mpi.map((item, index) =>
           typeof item !== "object" ? (
             <div className="flex mx-0 basis-1/3">

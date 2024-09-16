@@ -7,8 +7,11 @@ import VehicleInfo from "./components/vehicle-info";
 import mpi from "./assets/mpi";
 import Notes from "./components/notes";
 import TiresAndBrakes from "./components/tires";
+import ColorCode from "./components/color-code";
+import quadrants from "./assets/quadrants";
 
 function App() {
+
   return (
     <div className="App">
       <Navbar />
@@ -17,12 +20,21 @@ function App() {
         <VehicleInfo />
       </div>
 
-      <div className="w-[70rem] mx-auto flex">
-        <VehicleCanvas />
-        <TiresAndBrakes/>
+      <div>
+        <ColorCode />
       </div>
 
-      <div className="">
+      <div className="w-[70rem] mx-auto flex">
+        <VehicleCanvas />
+
+        <section className="flex flex-wrap">
+        <span className="bg-black text-white w-full flex justify-center border">
+          Brakes and Tires
+        </span>
+          {quadrants.map((wheel) => (
+            <TiresAndBrakes wheel={wheel} />
+          ))}
+        </section>
       </div>
 
       <div className="flex flex-wrap w-[70rem] mx-auto">
@@ -43,7 +55,7 @@ function App() {
       </div>
 
       <div>
-        <Notes/>
+        <Notes />
       </div>
 
       <Footer />

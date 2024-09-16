@@ -21,7 +21,7 @@ export default function VehicleCanvas() {
     const ctx = canvas.getContext("2d");
     ctxRef.current = ctx;
 
-    // Resize canvas to fit the window
+    // Resize canvas here
     const resize = () => {
       ctx.canvas.width = 450;
       ctx.canvas.height = 250;
@@ -59,13 +59,11 @@ export default function VehicleCanvas() {
 
     resize(); // Resize on load
 
-    // Add event listeners
     window.addEventListener("resize", resize);
     canvas.addEventListener("mousedown", startPainting);
     canvas.addEventListener("mouseup", stopPainting);
     canvas.addEventListener("mousemove", sketch);
 
-    // Clean up the event listeners on component unmount
     return () => {
       window.removeEventListener("resize", resize);
       canvas.removeEventListener("mousedown", startPainting);
@@ -85,7 +83,7 @@ export default function VehicleCanvas() {
   return (
     <div className="w-full mx-auto border">
       <span className="bg-black text-white w-full flex justify-center">
-        Prior Body Damage (draw with mouse)
+        Prior Body Damage (Draw with mouse)
       </span>
       <canvas
         ref={canvasRef}

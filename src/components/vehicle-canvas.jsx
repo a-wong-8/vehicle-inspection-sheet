@@ -29,9 +29,9 @@ export default function VehicleCanvas() {
     };
 
     const getPosition = (event) => {
-      //   const canvasBounds = canvas.getBoundingClientRect();
-      coord.current.x = event.clientX - canvas.offsetLeft;
-      coord.current.y = event.clientY - canvas.offsetTop;
+      const canvasBounds = canvas.getBoundingClientRect();
+      coord.current.x = event.clientX - canvasBounds.left;
+      coord.current.y = event.clientY - canvasBounds.top;
     };
 
     const startPainting = (event) => {

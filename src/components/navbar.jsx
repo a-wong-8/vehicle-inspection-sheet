@@ -33,7 +33,7 @@ export default function Navbar() {
   return (
     <nav className="w-full flex justify-between fixed top-0 bg-opacity-70 bg-black text-white z-10 shadow-lg">
       <span className="ml-2 p-1">{date}</span>
-      <span className="font-bold text-lg">Vehicle Inspection Sheet</span>
+      <span className="font-bold text-lg">Multi-point Inspection Sheet</span>
       <span className="mr-2 p-1">
         <button onClick={print}>
           Print・

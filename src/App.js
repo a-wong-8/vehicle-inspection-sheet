@@ -53,7 +53,7 @@ function App() {
         )}
       </div>
 
-      <div>
+      <div className="w-[70rem] mx-auto text-left">
         <Notes />
       </div>
 

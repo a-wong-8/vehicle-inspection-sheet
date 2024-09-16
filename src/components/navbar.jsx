@@ -1,5 +1,5 @@
-import html2canvas from "html2canvas";
-import jsPDF from "jspdf";
+// import html2canvas from "html2canvas";
+// import jsPDF from "jspdf";
 
 export default function Navbar() {
   const date = new Date().toLocaleDateString();
@@ -35,16 +35,15 @@ export default function Navbar() {
       <span className="ml-2 p-1">{date}</span>
       <span className="font-bold text-lg">Vehicle Inspection Sheet</span>
       <span className="mr-2 p-1">
-        <a href="#" onClick={print}>
+        <button onClick={print}>
           Print・
-        </a>
+        </button>
         {/* <a href="#" onClick={save}>
           Save・
         </a> */}
-        {/* <a href="#">Send ・</a> */}
-        <a href="#" onClick={clear}>
+        <button onClick={clear}>
           Clear
-        </a>
+        </button>
       </span>
     </nav>
   );

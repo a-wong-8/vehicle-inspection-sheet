@@ -11,7 +11,6 @@ import ColorCode from "./components/color-code";
 import quadrants from "./assets/quadrants";
 
 function App() {
-
   return (
     <div className="App">
       <Navbar />
@@ -28,9 +27,9 @@ function App() {
         <VehicleCanvas />
 
         <section className="flex flex-wrap">
-        <span className="bg-black text-white w-full flex justify-center border">
-          Brakes and Tires
-        </span>
+          <span className="bg-black text-white w-full flex justify-center border">
+            Brakes and Tires
+          </span>
           {quadrants.map((wheel) => (
             <TiresAndBrakes wheel={wheel} />
           ))}

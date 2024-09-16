@@ -4,6 +4,7 @@ export default function TiresAndBrakes({ wheel }) {
   const [checkedBoxOne, setCheckedBoxOne] = useState(null);
   const [checkedBoxTwo, setCheckedBoxTwo] = useState(null);
   const [checkedBoxThree, setCheckedBoxThree] = useState(null);
+  const [checkedBoxFour, setCheckedBoxFour] = useState(null);
 
   const handleCheckOne = (index) => {
     setCheckedBoxOne(index === checkedBoxOne ? null : index);
@@ -13,6 +14,9 @@ export default function TiresAndBrakes({ wheel }) {
   };
   const handleCheckThree = (index) => {
     setCheckedBoxThree(index === checkedBoxThree ? null : index);
+  };
+  const handleCheckFour = (index) => {
+    setCheckedBoxFour(index === checkedBoxFour ? null : index);
   };
 
   return (
@@ -149,24 +153,24 @@ export default function TiresAndBrakes({ wheel }) {
           <input
             type="checkbox"
             className="scale-125"
-            checked={checkedBoxThree === 1}
-            onChange={() => handleCheckThree(1)}
+            checked={checkedBoxFour === 1}
+            onChange={() => handleCheckFour(1)}
           />
         </div>
         <div className="bg-yellow-500 h-6 w-7">
           <input
             type="checkbox"
             className="scale-125"
-            checked={checkedBoxThree === 2}
-            onChange={() => handleCheckThree(2)}
+            checked={checkedBoxFour === 2}
+            onChange={() => handleCheckFour(2)}
           />
         </div>
         <div className="bg-red-500 h-6 w-7">
           <input
             type="checkbox"
             className="scale-125"
-            checked={checkedBoxThree === 3}
-            onChange={() => handleCheckThree(3)}
+            checked={checkedBoxFour === 3}
+            onChange={() => handleCheckFour(3)}
           />
         </div>
         <label className="ml-1">Rotor / Drum</label>

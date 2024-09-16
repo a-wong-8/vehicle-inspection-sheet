@@ -30,8 +30,10 @@ export default function VehicleCanvas() {
 
     const getPosition = (event) => {
       const canvasBounds = canvas.getBoundingClientRect();
-      coord.current.x = event.clientX - canvasBounds.left;
-      coord.current.y = event.clientY - canvasBounds.top;
+      const clientX = event.clientX || event.touches[0].clientX;
+      const clientY = event.clientY || event.touches[0].clientY;
+      coord.current.x = clientX - canvasBounds.left;
+      coord.current.y = clientY - canvasBounds.top;
     };
 
     const startPainting = (event) => {
@@ -60,15 +62,25 @@ export default function VehicleCanvas() {
     resize(); // Resize on load
 
     window.addEventListener("resize", resize);
+
+    // Mouse Events
     canvas.addEventListener("mousedown", startPainting);
     canvas.addEventListener("mouseup", stopPainting);
     canvas.addEventListener("mousemove", sketch);
+
+    // Touch Events for mobile
+    canvas.addEventListener("touchstart", startPainting);
+    canvas.addEventListener("touchend", stopPainting);
+    canvas.addEventListener("touchmove", sketch);
 
     return () => {
       window.removeEventListener("resize", resize);
       canvas.removeEventListener("mousedown", startPainting);
       canvas.removeEventListener("mouseup", stopPainting);
       canvas.removeEventListener("mousemove", sketch);
+      canvas.removeEventListener("touchstart", startPainting);
+      canvas.removeEventListener("touchend", stopPainting);
+      canvas.removeEventListener("touchmove", sketch);
     };
   }, []);
 
@@ -83,12 +95,12 @@ export default function VehicleCanvas() {
   return (
     <div className="w-full mx-auto border">
       <h2 className="bg-black text-white w-full flex justify-center">
-        Prior Body Damage (Draw with mouse)
+        Prior Body Damage (Draw with mouse or touch)
       </h2>
       <canvas
         ref={canvasRef}
         id="canvas"
-        className="mx-auto rounded-md"
+        className="mx-auto rounded-md touch-none"
       ></canvas>
       <button onClick={clearCanvas} className="border p-1 m-2 w-20 rounded-xl border-black shadow-md">
         Clear

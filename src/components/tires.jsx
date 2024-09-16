@@ -1,7 +1,6 @@
 import { useState } from "react";
 
 export default function TiresAndBrakes({ wheel }) {
-
   const [checkedBoxOne, setCheckedBoxOne] = useState(null);
   const [checkedBoxTwo, setCheckedBoxTwo] = useState(null);
   const [checkedBoxThree, setCheckedBoxThree] = useState(null);
@@ -18,12 +17,11 @@ export default function TiresAndBrakes({ wheel }) {
 
   return (
     <div className="border w-full basis-1/2">
-      <span className="font-bold border w-full flex bg-gray-200 justify-center border-black">
+      <span className="font-semibold text-sm border w-full flex bg-gray-200 justify-center border-black">
         {wheel}
       </span>
 
       <div className="flex">
-        
         <div className="bg-green-500 h-6 w-7">
           <input
             type="checkbox"
@@ -69,16 +67,28 @@ export default function TiresAndBrakes({ wheel }) {
 
       <div className="flex">
         <div className="bg-green-500 h-6 w-7">
-          <input type="checkbox" className="scale-125"   checked={checkedBoxTwo === 1}
-            onChange={() => handleCheckTwo(1)}/>
+          <input
+            type="checkbox"
+            className="scale-125"
+            checked={checkedBoxTwo === 1}
+            onChange={() => handleCheckTwo(1)}
+          />
         </div>
         <div className="bg-yellow-500 h-6 w-7">
-          <input type="checkbox" className="scale-125"   checked={checkedBoxTwo === 2}
-            onChange={() => handleCheckTwo(2)}/>
+          <input
+            type="checkbox"
+            className="scale-125"
+            checked={checkedBoxTwo === 2}
+            onChange={() => handleCheckTwo(2)}
+          />
         </div>
         <div className="bg-red-500 h-6 w-7">
-          <input type="checkbox" className="scale-125"   checked={checkedBoxTwo === 3}
-            onChange={() => handleCheckTwo(3)}/>
+          <input
+            type="checkbox"
+            className="scale-125"
+            checked={checkedBoxTwo === 3}
+            onChange={() => handleCheckTwo(3)}
+          />
         </div>
         <label className="ml-1">
           Tire Tread
@@ -101,16 +111,28 @@ export default function TiresAndBrakes({ wheel }) {
 
       <div className="flex">
         <div className="bg-green-500 h-6 w-7">
-          <input type="checkbox" className="scale-125"   checked={checkedBoxThree === 1}
-            onChange={() => handleCheckThree(1)}/>
+          <input
+            type="checkbox"
+            className="scale-125"
+            checked={checkedBoxThree === 1}
+            onChange={() => handleCheckThree(1)}
+          />
         </div>
         <div className="bg-yellow-500 h-6 w-7">
-          <input type="checkbox" className="scale-125"   checked={checkedBoxThree === 2}
-            onChange={() => handleCheckThree(2)}/>
+          <input
+            type="checkbox"
+            className="scale-125"
+            checked={checkedBoxThree === 2}
+            onChange={() => handleCheckThree(2)}
+          />
         </div>
         <div className="bg-red-500 h-6 w-7">
-          <input type="checkbox" className="scale-125"   checked={checkedBoxThree === 3}
-            onChange={() => handleCheckThree(3)}/>
+          <input
+            type="checkbox"
+            className="scale-125"
+            checked={checkedBoxThree === 3}
+            onChange={() => handleCheckThree(3)}
+          />
         </div>
         <label className="ml-1">
           Wear
@@ -122,12 +144,40 @@ export default function TiresAndBrakes({ wheel }) {
         </label>
       </div>
 
+      <div className="flex">
+        <div className="bg-green-500 h-6 w-7">
+          <input
+            type="checkbox"
+            className="scale-125"
+            checked={checkedBoxThree === 1}
+            onChange={() => handleCheckThree(1)}
+          />
+        </div>
+        <div className="bg-yellow-500 h-6 w-7">
+          <input
+            type="checkbox"
+            className="scale-125"
+            checked={checkedBoxThree === 2}
+            onChange={() => handleCheckThree(2)}
+          />
+        </div>
+        <div className="bg-red-500 h-6 w-7">
+          <input
+            type="checkbox"
+            className="scale-125"
+            checked={checkedBoxThree === 3}
+            onChange={() => handleCheckThree(3)}
+          />
+        </div>
+        <label className="ml-1">Rotor / Drum</label>
+      </div>
+
       <div>
         <label>Tire Pressure</label>
         <br />
-        <label>Before: </label>
+        <label>Before </label>
         <input type="text" className="border w-10 mr-2" />
-        <label>After: </label>
+        <label>After </label>
         <input type="text" className="border w-10" />
       </div>
     </div>

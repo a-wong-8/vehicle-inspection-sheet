@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export default function CheckBoxes({ item }) {
-  const [checkedBox, setCheckedBox] = useState(null); 
+  const [checkedBox, setCheckedBox] = useState(null);
 
   const handleCheck = (index) => {
     setCheckedBox(index === checkedBox ? null : index);
@@ -9,7 +9,7 @@ export default function CheckBoxes({ item }) {
 
   return (
     <div className="flex border border-black w-full">
-      <div className="bg-green-500 h-full w-8 p-1">
+      <div className="bg-green-500 h-full w-8 p-1 justify-center flex">
         <input
           type="checkbox"
           className="scale-150"
@@ -17,7 +17,7 @@ export default function CheckBoxes({ item }) {
           onChange={() => handleCheck(1)}
         />
       </div>
-      <div className="bg-yellow-500 h-full w-8 p-1">
+      <div className="bg-yellow-500 h-full w-8 p-1 flex justify-center">
         <input
           type="checkbox"
           className="scale-150"
@@ -25,7 +25,7 @@ export default function CheckBoxes({ item }) {
           onChange={() => handleCheck(2)}
         />
       </div>
-      <div className="bg-red-500 h-full w-8 p-1">
+      <div className="bg-red-500 h-full w-8 p-1 flex justify-center">
         <input
           type="checkbox"
           className="scale-150"
@@ -33,7 +33,7 @@ export default function CheckBoxes({ item }) {
           onChange={() => handleCheck(3)}
         />
       </div>
-      <label className="text-left w-full pl-1">{item}</label>
+      <label className="text-left w-full pl-1 my-auto">{item}</label>
     </div>
   );
 }

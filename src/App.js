@@ -27,7 +27,7 @@ function App() {
         <VehicleCanvas />
 
         <section className="flex flex-wrap">
-          <h2 className="bg-black text-white w-full flex justify-center border">
+          <h2 className="bg-black text-white w-full flex justify-center border-t border-r">
             Brakes and Tires
           </h2>
           {quadrants.map((wheel) => (

@@ -39,6 +39,6 @@
 
 @media print {
   @page {
-    size: 1525px;
+    size: 1500px;
   }
 }

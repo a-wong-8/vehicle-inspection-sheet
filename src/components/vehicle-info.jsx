@@ -1,7 +1,7 @@
 export default function VehicleInfo() {
   return (
     <form className="border w-[70rem] py-4 mx-auto mt-7">
-      <label for="" className="pl-4">
+      <label className="pl-4">
         Dealer Name:{" "}
       </label>
       <input
@@ -11,7 +11,7 @@ export default function VehicleInfo() {
         className="w-96 my-2 border-black border rounded"
       />
 
-      <label for="" className="pl-4">
+      <label className="pl-4">
         Technician:{" "}
       </label>
       <input
@@ -21,7 +21,7 @@ export default function VehicleInfo() {
         className=" my-2 border border-black rounded"
       />
       <br />
-      <label for="" className="pl-4">
+      <label className="pl-4">
         Customer Name:{" "}
       </label>
       <input
@@ -31,7 +31,7 @@ export default function VehicleInfo() {
         className="w-96 my-2 border border-black rounded"
       />
 
-      <label for="" className="pl-4">
+      <label className="pl-4">
         Yr/Make/Model:{" "}
       </label>
       <input
@@ -42,7 +42,7 @@ export default function VehicleInfo() {
       />
 
       <br />
-      <label for="" className="pl-4">
+      <label className="pl-4">
         Mileage:{" "}
       </label>
       <input
@@ -52,7 +52,7 @@ export default function VehicleInfo() {
         className="w-20 my-2 border border-black rounded"
       />
 
-      <label for="" className="pl-4">
+      <label className="pl-4">
         VIN:{" "}
       </label>
       <input
@@ -62,7 +62,7 @@ export default function VehicleInfo() {
         className="w-52 my-2 border border-black rounded"
       />
 
-      <label for="" className="pl-4">
+      <label className="pl-4">
         Hat/Tag:{" "}
       </label>
       <input
@@ -71,7 +71,7 @@ export default function VehicleInfo() {
         name=""
         className="w-16 my-2 border border-black rounded"
       />
-      <label for="" className="pl-4">
+      <label className="pl-4">
         Repair Order:{" "}
       </label>
       <input

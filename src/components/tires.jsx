@@ -53,8 +53,8 @@ export default function TiresAndBrakes({ wheel }) {
 
         <label className="ml-1">
           Brake Lining
-          <select type="text" className="border ml-2">
-            <option selected disabled>-</option>
+          <select type="text" className="border ml-2" defaultValue="-">
+            <option disabled>-</option>
             <option>1</option>
             <option>2</option>
             <option>3</option>
@@ -97,8 +97,8 @@ export default function TiresAndBrakes({ wheel }) {
         </div>
         <label className="ml-1">
           Tire Tread
-          <select type="text" className="border ml-2">
-            <option selected disabled>-</option>
+          <select type="text" className="border ml-2" defaultValue="-">
+            <option disabled>-</option>
             <option>1</option>
             <option>2</option>
             <option>3</option>
@@ -142,12 +142,14 @@ export default function TiresAndBrakes({ wheel }) {
         </div>
         <label className="ml-1">
           Wear
-          <select className="border ml-2">
-            <option selected disabled>-</option>
+          <select className="border ml-2" defaultValue="-">
+            <option disabled>-</option>
             <option>Even</option>
             <option>Uneven</option>
             <option>Toe</option>
             <option>Camber</option>
+            <option>Edge</option>
+            <option>Center</option>
           </select>
         </label>
       </div>

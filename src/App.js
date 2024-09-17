@@ -30,8 +30,8 @@ function App() {
           <h2 className="bg-black text-white w-full flex justify-center border-t border-r">
             Brakes and Tires
           </h2>
-          {quadrants.map((wheel) => (
-            <TiresAndBrakes wheel={wheel} />
+          {quadrants.map((wheel, index) => (
+            <TiresAndBrakes wheel={wheel} key={index}/>
           ))}
         </section>
       </div>

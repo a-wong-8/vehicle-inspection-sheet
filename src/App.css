@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+@media print {
+  @page {
+    size: 1025px;
+  }
+
+  /* Additional styles for print can go here */
+}

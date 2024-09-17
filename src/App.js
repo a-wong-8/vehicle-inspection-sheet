@@ -23,11 +23,11 @@ function App() {
         <ColorCode />
       </div>
 
-      <div className="w-[70rem] mx-auto flex">
+      <div className="lg:w-[70rem] mx-auto lg:flex">
         <VehicleCanvas />
 
-        <section className="flex flex-wrap">
-          <h2 className="bg-black text-white w-full flex justify-center border-t border-r">
+        <section className="lg:flex lg:flex-wrap">
+          <h2 className="bg-black text-white w-full lg:flex justify-center border-t border-r">
             Brakes and Tires
           </h2>
           {quadrants.map((wheel, index) => (
@@ -36,10 +36,10 @@ function App() {
         </section>
       </div>
 
-      <div className="flex flex-wrap w-[70rem] mx-auto rounded-lg">
+      <div className="flex flex-wrap lg:w-[70rem] mx-auto rounded-lg">
         {mpi.map((item, index) =>
           typeof item !== "object" ? (
-            <div className="flex mx-0 basis-1/3">
+            <div className="flex mx-0 basis-1/2 lg:basis-1/3">
               <CheckBoxes item={item} key={index} />
             </div>
           ) : (
@@ -53,7 +53,7 @@ function App() {
         )}
       </div>
 
-      <div className="w-[70rem] mx-auto text-left">
+      <div className="lg:w-[70rem] mx-auto text-left">
         <Notes />
       </div>
 

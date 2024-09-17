@@ -23,8 +23,13 @@ export default function VehicleCanvas() {
 
     // Resize canvas here
     const resize = () => {
-      ctx.canvas.width = 450;
-      ctx.canvas.height = 250;
+      if (window.innerWidth > 1024) {
+        ctx.canvas.width = 460;
+        ctx.canvas.height = 270;
+      } else {
+        ctx.canvas.width = 360;
+        ctx.canvas.height = 250;
+      }
       drawImage();
     };
 

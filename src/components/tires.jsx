@@ -20,7 +20,7 @@ export default function TiresAndBrakes({ wheel }) {
   };
 
   return (
-    <div className="border w-full md:basis-1/2">
+    <div className="border w-full md:basis-1/2 print:basis-1/2">
 
       <span className="font-semibold text-sm border w-full flex bg-gray-200 justify-center border-black">
         {wheel}

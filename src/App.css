@@ -39,8 +39,6 @@
 
 @media print {
   @page {
-    size: 1025px;
+    size: 1500px;
   }
-
-  /* Additional styles for print can go here */
 }

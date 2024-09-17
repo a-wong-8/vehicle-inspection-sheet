@@ -1,12 +1,12 @@
 export default function VehicleInfo() {
   return (
     <form className="border lg:w-[70rem] py-4 lg:mx-auto md:mx-12 mx-10 mt-12 lg:mt-7">
-      <div className="flex flex-wrap text-left lg:flex-nowrap lg:block lg:text-center">
+      <div className="flex flex-wrap flex-col text-left lg:flex-nowrap lg:block lg:text-center print:flex-nowrap print:block print:text-center">
 
         <label className="pl-4">Dealer Name: </label>
         <input
           type="text"
-          className="lg:w-96 my-2 border-black border rounded"
+          className="lg:w-96 print:w-96 my-2 border-black border rounded"
         />
 
         <label className="pl-4">Technician: </label>

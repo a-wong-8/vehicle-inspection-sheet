@@ -23,10 +23,10 @@ function App() {
         <ColorCode />
       </div>
 
-      <div className="lg:w-[70rem] mx-auto lg:flex">
+      <div className="lg:w-[70rem] mx-auto lg:flex print:flex">
         <VehicleCanvas />
 
-        <section className="lg:flex lg:flex-wrap">
+        <section className="lg:flex lg:flex-wrap print:flex print:flex-wrap">
           <h2 className="bg-black text-white w-full lg:flex justify-center border-t border-r">
             Brakes and Tires
           </h2>
@@ -39,7 +39,7 @@ function App() {
       <div className="flex flex-wrap lg:w-[70rem] mx-auto rounded-lg">
         {mpi.map((item, index) =>
           typeof item !== "object" ? (
-            <div className="flex mx-0 basis-1/2 lg:basis-1/3">
+            <div className="flex mx-0 basis-1/2 lg:basis-1/3 print:basis-1/3">
               <CheckBoxes item={item} key={index} />
             </div>
           ) : (

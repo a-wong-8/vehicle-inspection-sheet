@@ -26,7 +26,7 @@ function App() {
       <div className="lg:w-[70rem] mx-auto lg:flex print:flex">
         <VehicleCanvas />
 
-        <section className="lg:flex lg:flex-wrap print:flex print:flex-wrap">
+        <section className="md:flex md:flex-wrap print:flex print:flex-wrap">
           <h2 className="bg-black text-white w-full lg:flex justify-center border-t border-r">
             Brakes and Tires
           </h2>

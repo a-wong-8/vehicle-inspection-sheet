@@ -27,7 +27,7 @@ export default function VehicleCanvas() {
         ctx.canvas.width = 460;
         ctx.canvas.height = 270;
       } else {
-        ctx.canvas.width = 360;
+        ctx.canvas.width = 350;
         ctx.canvas.height = 250;
       }
       drawImage();

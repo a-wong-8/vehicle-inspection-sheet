@@ -27,7 +27,7 @@ export default function TiresAndBrakes({ wheel }) {
       </span>
 
       <div className="flex">
-        <div className="bg-green-500 h-6 w-7">
+        <div className="bg-green-500 w-7">
           <input
             type="checkbox"
             className="scale-125"
@@ -35,7 +35,7 @@ export default function TiresAndBrakes({ wheel }) {
             onChange={() => handleCheckOne(1)}
           />
         </div>
-        <div className="bg-yellow-500 h-6 w-7">
+        <div className="bg-yellow-500 w-7">
           <input
             type="checkbox"
             className="scale-125"
@@ -43,7 +43,7 @@ export default function TiresAndBrakes({ wheel }) {
             onChange={() => handleCheckOne(2)}
           />
         </div>
-        <div className="bg-red-500 h-6 w-7">
+        <div className="bg-red-500 w-7">
           <input
             type="checkbox"
             className="scale-125"
@@ -54,25 +54,12 @@ export default function TiresAndBrakes({ wheel }) {
 
         <label className="ml-1">
           Brake Lining
-          <select type="text" className="border ml-2" defaultValue="-">
-            <option disabled>-</option>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-            <option>6</option>
-            <option>7</option>
-            <option>8</option>
-            <option>9</option>
-            <option>10</option>
-          </select>{" "}
-          mm
+          <input type="text" className="border w-14 ml-2" placeholder=" --"/>
         </label>
       </div>
 
       <div className="flex">
-        <div className="bg-green-500 h-6 w-7">
+        <div className="bg-green-500 w-7">
           <input
             type="checkbox"
             className="scale-125"
@@ -80,7 +67,7 @@ export default function TiresAndBrakes({ wheel }) {
             onChange={() => handleCheckTwo(1)}
           />
         </div>
-        <div className="bg-yellow-500 h-6 w-7">
+        <div className="bg-yellow-500 w-7">
           <input
             type="checkbox"
             className="scale-125"
@@ -88,7 +75,7 @@ export default function TiresAndBrakes({ wheel }) {
             onChange={() => handleCheckTwo(2)}
           />
         </div>
-        <div className="bg-red-500 h-6 w-7">
+        <div className="bg-red-500 w-7">
           <input
             type="checkbox"
             className="scale-125"
@@ -98,26 +85,12 @@ export default function TiresAndBrakes({ wheel }) {
         </div>
         <label className="ml-1">
           Tire Tread
-          <select type="text" className="border ml-2" defaultValue="-">
-            <option disabled>-</option>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-            <option>6</option>
-            <option>7</option>
-            <option>8</option>
-            <option>9</option>
-            <option>10</option>
-            <option>11</option>
-          </select>{" "}
-          /32"
+          <input type="text" className="border w-14 ml-2" placeholder=" --"/>
         </label>
       </div>
 
       <div className="flex">
-        <div className="bg-green-500 h-6 w-7">
+        <div className="bg-green-500 w-7">
           <input
             type="checkbox"
             className="scale-125"
@@ -125,7 +98,7 @@ export default function TiresAndBrakes({ wheel }) {
             onChange={() => handleCheckThree(1)}
           />
         </div>
-        <div className="bg-yellow-500 h-6 w-7">
+        <div className="bg-yellow-500 w-7">
           <input
             type="checkbox"
             className="scale-125"
@@ -133,7 +106,7 @@ export default function TiresAndBrakes({ wheel }) {
             onChange={() => handleCheckThree(2)}
           />
         </div>
-        <div className="bg-red-500 h-6 w-7">
+        <div className="bg-red-500 w-7">
           <input
             type="checkbox"
             className="scale-125"
@@ -143,8 +116,8 @@ export default function TiresAndBrakes({ wheel }) {
         </div>
         <label className="ml-1">
           Wear
-          <select className="border ml-2" defaultValue="-">
-            <option disabled>-</option>
+          <select className="border ml-2" defaultValue="--">
+            <option disabled>--</option>
             <option>Even</option>
             <option>Uneven</option>
             <option>Toe</option>
@@ -156,7 +129,7 @@ export default function TiresAndBrakes({ wheel }) {
       </div>
 
       <div className="flex">
-        <div className="bg-green-500 h-6 w-7">
+        <div className="bg-green-500 w-7">
           <input
             type="checkbox"
             className="scale-125"
@@ -164,7 +137,7 @@ export default function TiresAndBrakes({ wheel }) {
             onChange={() => handleCheckFour(1)}
           />
         </div>
-        <div className="bg-yellow-500 h-6 w-7">
+        <div className="bg-yellow-500 w-7">
           <input
             type="checkbox"
             className="scale-125"
@@ -172,7 +145,7 @@ export default function TiresAndBrakes({ wheel }) {
             onChange={() => handleCheckFour(2)}
           />
         </div>
-        <div className="bg-red-500 h-6 w-7">
+        <div className="bg-red-500 w-7">
           <input
             type="checkbox"
             className="scale-125"
@@ -187,9 +160,9 @@ export default function TiresAndBrakes({ wheel }) {
         <label>Tire Pressure</label>
         <br />
         <label>Before </label>
-        <input type="text" className="border w-10 mr-2" />
+        <input type="text" className="border w-11 mr-2" placeholder=" --"/>
         <label>After </label>
-        <input type="text" className="border w-10" />
+        <input type="text" className="border w-11" placeholder=" --"/>
       </div>
     </div>
   );

@@ -23,7 +23,7 @@ function App() {
         <ColorCode />
       </div>
 
-      <div className="lg:w-[70rem] mx-auto lg:flex print:flex">
+      <div className="lg:w-[69rem] mx-auto lg:flex print:flex">
         <VehicleCanvas />
 
         <section className="md:flex md:flex-wrap print:flex print:flex-wrap">
@@ -36,7 +36,7 @@ function App() {
         </section>
       </div>
 
-      <div className="flex flex-wrap lg:w-[70rem] mx-auto rounded-lg">
+      <div className="flex flex-wrap lg:w-[69rem] mx-auto rounded-lg">
         {mpi.map((item, index) =>
           typeof item !== "object" ? (
             <div className="flex mx-0 basis-1/2 lg:basis-1/3 print:basis-1/3">
@@ -53,7 +53,7 @@ function App() {
         )}
       </div>
 
-      <div className="lg:w-[70rem] mx-auto text-left">
+      <div className="lg:w-[69rem] mx-auto text-left">
         <Notes />
       </div>
 

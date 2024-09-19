@@ -33,7 +33,7 @@ export default function CheckBoxes({ item }) {
           onChange={() => handleCheck(3)}
         />
       </div>
-      <label className="text-left w-full pl-1 my-auto">{item}</label>
+      <label className="text-left w-full pl-1 my-auto print:text-sm">{item}</label>
     </div>
   );
 }

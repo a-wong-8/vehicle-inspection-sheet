@@ -21,8 +21,7 @@ export default function TiresAndBrakes({ wheel }) {
 
   return (
     <div className="border w-full md:basis-1/2 print:basis-1/2">
-
-      <span className="font-semibold text-sm border w-full flex bg-gray-200 justify-center border-black">
+      <span className="font-semibold text-sm border w-full flex bg-gray-200 justify-center border-black print:text-sm">
         {wheel}
       </span>
 
@@ -52,9 +51,9 @@ export default function TiresAndBrakes({ wheel }) {
           />
         </div>
 
-        <label className="ml-1">
+        <label className="ml-1 print:text-sm">
           Brake Lining
-          <input type="text" className="border w-14 ml-2" placeholder=" --"/>
+          <input type="text" className="border w-14 ml-2" placeholder=" --" />
         </label>
       </div>
 
@@ -83,9 +82,9 @@ export default function TiresAndBrakes({ wheel }) {
             onChange={() => handleCheckTwo(3)}
           />
         </div>
-        <label className="ml-1">
+        <label className="ml-1 print:text-sm">
           Tire Tread
-          <input type="text" className="border w-14 ml-2" placeholder=" --"/>
+          <input type="text" className="border w-14 ml-2" placeholder=" --" />
         </label>
       </div>
 
@@ -114,7 +113,7 @@ export default function TiresAndBrakes({ wheel }) {
             onChange={() => handleCheckThree(3)}
           />
         </div>
-        <label className="ml-1">
+        <label className="ml-1 print:text-sm">
           Wear
           <select className="border ml-2" defaultValue="--">
             <option disabled>--</option>
@@ -153,16 +152,16 @@ export default function TiresAndBrakes({ wheel }) {
             onChange={() => handleCheckFour(3)}
           />
         </div>
-        <label className="ml-1">Rotor / Drum</label>
+        <label className="ml-1 print:text-sm">Rotor / Drum</label>
       </div>
 
       <div>
         <label>Tire Pressure</label>
         <br />
         <label>Before </label>
-        <input type="text" className="border w-11 mr-2" placeholder=" --"/>
+        <input type="text" className="border w-11 mr-2" placeholder=" --" />
         <label>After </label>
-        <input type="text" className="border w-11" placeholder=" --"/>
+        <input type="text" className="border w-11" placeholder=" --" />
       </div>
     </div>
   );

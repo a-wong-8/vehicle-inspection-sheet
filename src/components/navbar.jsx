@@ -28,11 +28,11 @@ export default function Navbar() {
   //   repairOrder = document.querySelector("#ro").value;
   // }
 
-  const clear = () => {
-    if (window.confirm("Clear entire sheet?")) {
-      window.location.reload();
-    }
-  };
+  // const clear = () => {
+  //   if (window.confirm("Clear entire sheet?")) {
+  //     window.location.reload();
+  //   }
+  // };
 
   return (
     <nav className="w-full flex justify-between fixed top-0 bg-opacity-70 md:h-10 bg-black text-white z-10 shadow-lg print:hidden">

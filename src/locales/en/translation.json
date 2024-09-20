@@ -1,6 +1,4 @@
 {
-  "welcome": "Welcome to the application",
-  "description": "This is an English description",
   "mpi": [
     { "1": "Interior / Exterior" },
     "Head Lights, Tail Lights, Turn Signals, Brake Lights, Hazard Lights, Exterior Lamps, License Plate Lights",
@@ -38,8 +36,31 @@
     "Condition of Battery / Cold Cranking Amps"
   ],
   "quadrants": ["Left Front", "Right Front", "Left Rear", "Right Rear"],
-  "brakes": ["Brake Lining", "Tire Tread", "Wear", "Rotor/Drum", "Tire Pressure", "Before", "After"],
-  "form": ["Dealer Name: ", "Technician: ", "Customer Name: ", "Yr/Make/Model: ", "Mileage: ", "VIN: ", "Tag: ", "Repair Order: "],
-  "headings": ["Checked and Okay", "May need future attention", "Requries immediate attention", "Prior Body Damage (Draw with mouse or touch)", "Brakes and Tires"],
+  "brakes": [
+    "Brake Lining",
+    "Tire Tread",
+    "Wear",
+    "Rotor/Drum",
+    "Tire Pressure",
+    "Before",
+    "After"
+  ],
+  "form": [
+    "Dealer Name: ",
+    "Technician: ",
+    "Customer Name: ",
+    "Yr/Make/Model: ",
+    "Mileage: ",
+    "VIN: ",
+    "Tag: ",
+    "Repair Order: "
+  ],
+  "headings": [
+    "Checked and Okay",
+    "May need future attention",
+    "Requries immediate attention",
+    "Prior Body Damage (Draw with mouse or touch)",
+    "Brakes and Tires"
+  ],
   "misc": ["Language", "Print", "Enter notes here...", "Clear"]
 }

@@ -36,6 +36,9 @@ export default function Navbar() {
 
   return (
     <nav className="w-full flex justify-between fixed top-0 bg-opacity-70 md:h-10 bg-black text-white z-10 shadow-lg print:hidden">
+      <span className="ml-2 my-auto p-1">{date}</span>
+      <h1 className="font-bold text-sm md:text-lg my-auto">
+    <nav className="w-full flex justify-between fixed top-0 bg-opacity-70 md:h-10 bg-black text-white z-10 shadow-lg print:hidden">
       <span className="ml-2 my-auto p-1 text-sm md:text-base">{date}</span>
       <h1 className="font-bold text-sm md:text-lg my-auto">
         Multi-Point Inspection Sheet

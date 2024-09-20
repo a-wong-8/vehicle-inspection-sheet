@@ -1,0 +1,73 @@
+{
+  "welcome": "Bienvenido a la aplicación",
+  "description": "Esta es una descripción en español",
+  "mpi": [
+    { "1": "Interior / Exterior" },
+    "Luces delanteras, luces traseras, señales de giro, luces de freno, luces de emergencia, lámparas exteriores, luces de la matrícula",
+    "Operación del limpiaparabrisas/lavaparabrisas, escobillas limpiaparabrisas",
+    "Condición del parabrisas: grietas / astillas / picaduras",
+    "Espejos / Vidrios",
+    "Ajuste del freno de emergencia",
+    "Operación de la bocina",
+    "Junta de la tapa del tanque de combustible",
+    "Aire acondicionado (si está equipado)",
+    "Operación del embrague (si está equipado)",
+    "Luces de marcha atrás izquierda / derecha",
+    "Luces de advertencia del tablero",
+    "Alfombra / Tapicería / Alfombrillas",
+    { "2": "Debajo del vehículo" },
+    "Amortiguadores / Suspensión / Estribos",
+    "Caja de dirección, enlace, rótulas, cubiertas antipolvo",
+    "Silenciador, tubos de escape / soportes, convertidor catalítico",
+    "Fugas de aceite del motor y otros líquidos",
+    "Líneas de freno, mangueras, cable del freno de mano",
+    "Fuelles de los ejes, fuelles de velocidad constante, juntas universales, enlace de la transmisión (si está equipado)",
+    "Transmisión, diferencial, caja de transferencia (revisar nivel de fluido, condición del fluido y fugas de fluido)",
+    "Líneas de fluidos y conexiones, banda del tanque de fluidos, sistemas de ventilación de vapor del tanque de combustible, mangueras",
+    "Inspección de tuercas y tornillos en el cuerpo y el chasis",
+    { "3": "Debajo del capó" },
+    "Niveles de líquidos: aceite, refrigerante, batería, dirección asistida, líquido de frenos, lavaparabrisas, transmisión automática",
+    "Filtro de aire del motor",
+    "Correas de transmisión (condición y ajuste)",
+    "Mangueras del sistema de refrigeración, mangueras del calentador, aire acondicionado, mangueras y conexiones",
+    "Radiador, condensador del aire acondicionado",
+    "Nivel / Condición del líquido del depósito de recuperación del refrigerante",
+    "Nivel / Condición del líquido del embrague (si está equipado)",
+    { "4": "Batería" },
+    "Terminales / Cables / Montajes de la batería",
+    "Condición de la batería / Amperios de arranque en frío"
+  ],
+  "quadrants": [
+    "Frontal izquierdo",
+    "Frontal derecho",
+    "Trasero izquierdo",
+    "Trasero derecho"
+  ],
+  "brakes": [
+    "Forro de freno",
+    "Neumático",
+    "Desgaste",
+    "Disco/Tambor",
+    "Presión de los neumáticos",
+    "Antes",
+    "Después"
+  ],
+  "form": [
+    "Nombre del concesionario: ",
+    "Técnico: ",
+    "Nombre del cliente: ",
+    "Año/Marca/Modelo: ",
+    "Kilometraje: ",
+    "VIN: ",
+    "Etiqueta: ",
+    "Orden de reparación: "
+  ],
+  "headings": [
+    "Revisado y en buen estado",
+    "Podría necesitar atención futura",
+    "Requiere atención inmediata",
+    "Daños previos en la carrocería (Dibujar con el ratón o el tacto)",
+    "Frenos y neumáticos"
+  ],
+  "misc": ["Idioma", "Imprimir", "Ingrese notas aquí...", "Limpiar"]
+}

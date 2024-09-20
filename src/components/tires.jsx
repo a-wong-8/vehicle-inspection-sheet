@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 export default function TiresAndBrakes({ wheel }) {
   const [checkedBoxOne, setCheckedBoxOne] = useState(null);
@@ -18,6 +19,9 @@ export default function TiresAndBrakes({ wheel }) {
   const handleCheckFour = (index) => {
     setCheckedBoxFour(index === checkedBoxFour ? null : index);
   };
+
+  const { t } = useTranslation();
+  const brakesArray = t('brakes', { returnObjects: true });
 
   return (
     <div className="border w-full md:basis-1/2 print:basis-1/2">
@@ -53,7 +57,7 @@ export default function TiresAndBrakes({ wheel }) {
         </div>
 
         <label className="ml-1">
-          Brake Lining
+          {brakesArray[0]}
           <input type="text" className="border w-14 ml-2" placeholder=" --"/>
         </label>
       </div>
@@ -84,7 +88,7 @@ export default function TiresAndBrakes({ wheel }) {
           />
         </div>
         <label className="ml-1">
-          Tire Tread
+          {brakesArray[1]}
           <input type="text" className="border w-14 ml-2" placeholder=" --"/>
         </label>
       </div>
@@ -115,7 +119,7 @@ export default function TiresAndBrakes({ wheel }) {
           />
         </div>
         <label className="ml-1">
-          Wear
+          {brakesArray[2]}
           <select className="border ml-2" defaultValue="--">
             <option disabled>--</option>
             <option>Even</option>
@@ -153,15 +157,19 @@ export default function TiresAndBrakes({ wheel }) {
             onChange={() => handleCheckFour(3)}
           />
         </div>
-        <label className="ml-1">Rotor / Drum</label>
+        <label className="ml-1">
+          {brakesArray[3]}
+          </label>
       </div>
 
       <div>
-        <label>Tire Pressure</label>
+        <label>
+          {brakesArray[4]}
+          </label>
         <br />
-        <label>Before </label>
+        <label>{brakesArray[5]}</label>
         <input type="text" className="border w-11 mr-2" placeholder=" --"/>
-        <label>After </label>
+        <label>{brakesArray[6]} </label>
         <input type="text" className="border w-11" placeholder=" --"/>
       </div>
     </div>

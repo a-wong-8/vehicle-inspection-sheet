@@ -17,7 +17,7 @@ function App() {
   const heading = t("headings", { returnObjects: true });
 
   return (
-    <div className="App">
+    <div className="App sm:print:text-sm">
       <Navbar />
 
       <div>
@@ -44,7 +44,7 @@ function App() {
       <div className="flex flex-wrap lg:w-[69rem] mx-auto rounded-lg">
         {mpiArray.map((item, index) =>
           typeof item !== "object" ? (
-            <div className="flex mx-0 basis-1/2 lg:basis-1/3 print:basis-1/3">
+            <div className="flex mx-0 basis-1/2">
               <CheckBoxes item={item} key={index} />
             </div>
           ) : (

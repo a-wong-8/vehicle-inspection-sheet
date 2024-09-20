@@ -31,7 +31,7 @@ function App() {
       <div className="lg:w-[69rem] mx-auto lg:flex print:flex">
         <VehicleCanvas />
 
-        <section className="md:flex md:flex-wrap print:flex print:flex-wrap w-[50%]">
+        <section className="md:flex md:flex-wrap print:flex print:flex-wrap lg:w-[50%]">
           <h2 className="bg-black text-white w-full lg:flex justify-center border-t border-r">
             {heading[4]}
           </h2>

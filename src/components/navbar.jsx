@@ -6,7 +6,7 @@ import Dropdown from "./dropdown";
 export default function Navbar() {
   const date = new Date().toLocaleDateString();
   const { t } = useTranslation();
-  const misc = t('misc', { returnObjects: true });
+  const misc = t("misc", { returnObjects: true });
 
   function print() {
     window.print();
@@ -42,7 +42,12 @@ export default function Navbar() {
       </h1>
       <span className="mr-2 p-1 my-auto">
         <Dropdown />・
-        <button onClick={print} className="hover:text-gray-400 text-sm md:text-base">{misc[1]}</button>
+        <button
+          onClick={print}
+          className="hover:text-gray-400 text-sm md:text-base"
+        >
+          {misc[1]}
+        </button>
         {/* <a href="#" onClick={save}>
           Save・
         </a> */}

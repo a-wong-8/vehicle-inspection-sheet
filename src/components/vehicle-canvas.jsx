@@ -103,7 +103,7 @@ export default function VehicleCanvas() {
   };
 
   return (
-    <div className="w-[50%] mx-auto border">
+    <div className="lg:w-[50%] mx-auto border">
       <h2 className="bg-black text-white w-full flex justify-center">
         {heading[3]}
       </h2>

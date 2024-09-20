@@ -52,6 +52,7 @@
     "Antes",
     "Después"
   ],
+  "wear": ["Parejo", "Desparejo", "Punta", "Camber", "Borde", "Centro"],
   "form": [
     "Nombre del concesionario: ",
     "Técnico: ",

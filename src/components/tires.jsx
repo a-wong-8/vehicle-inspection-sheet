@@ -22,6 +22,7 @@ export default function TiresAndBrakes({ wheel }) {
 
   const { t } = useTranslation();
   const brakesArray = t('brakes', { returnObjects: true });
+  const wear = t('wear', { returnObjects: true });
 
   return (
     <div className="border w-full md:basis-1/2 print:basis-1/2">
@@ -122,12 +123,12 @@ export default function TiresAndBrakes({ wheel }) {
           {brakesArray[2]}
           <select className="border ml-2" defaultValue="--">
             <option disabled>--</option>
-            <option>Even</option>
-            <option>Uneven</option>
-            <option>Toe</option>
-            <option>Camber</option>
-            <option>Edge</option>
-            <option>Center</option>
+            <option>{wear[0]}</option>
+            <option>{wear[1]}</option>
+            <option>{wear[2]}</option>
+            <option>{wear[3]}</option>
+            <option>{wear[4]}</option>
+            <option>{wear[5]}</option>
           </select>
         </label>
       </div>

@@ -39,6 +39,7 @@
     ],
     "quadrants": ["Avant gauche", "Avant droit", "Arrière gauche", "Arrière droit"],
     "brakes": ["Frein", "Pneu", "Usure", "Disque/Tambour", "Pression des pneus", "Avant", "Après"],
+    "wear": ["Égal", "Inégal", "Bout", "Carrossage", "Bord", "Centre"],
     "form": ["Nom du concessionnaire: ", "Technicien: ", "Nom du client: ", "Année/Marque/Modèle: ", "Kilométrage: ", "VIN: ", "Plaque: ", "Ordre de réparation: "],
     "headings": ["Vérifié et en bon état", "Peut nécessiter une attention future", "Nécessite une attention immédiate", "Dommages corporels antérieurs (Dessiner avec la souris ou le toucher)", "Freins et pneus"],
     "misc": ["Langue", "Imprimer", "Entrez vos notes ici...", "Effacer"]

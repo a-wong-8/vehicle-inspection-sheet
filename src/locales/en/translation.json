@@ -45,6 +45,7 @@
     "Before",
     "After"
   ],
+  "wear": ["Even", "Uneven", "Toe", "Camber", "Edge", "Center"],
   "form": [
     "Dealer Name: ",
     "Technician: ",

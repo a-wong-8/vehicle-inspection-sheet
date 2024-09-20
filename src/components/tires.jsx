@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 export default function TiresAndBrakes({ wheel }) {
   const [checkedBoxOne, setCheckedBoxOne] = useState(null);
@@ -18,6 +19,10 @@ export default function TiresAndBrakes({ wheel }) {
   const handleCheckFour = (index) => {
     setCheckedBoxFour(index === checkedBoxFour ? null : index);
   };
+
+  const { t } = useTranslation();
+  const brakesArray = t('brakes', { returnObjects: true });
+  const wear = t('wear', { returnObjects: true });
 
   return (
     <div className="border w-full md:basis-1/2 print:basis-1/2">
@@ -51,9 +56,9 @@ export default function TiresAndBrakes({ wheel }) {
           />
         </div>
 
-        <label className="ml-1 print:text-sm">
-          Brake Lining
-          <input type="text" className="border w-14 ml-2" placeholder=" --" />
+        <label className="ml-1">
+          {brakesArray[0]}
+          <input type="text" className="border w-14 ml-2" placeholder=" --"/>
         </label>
       </div>
 
@@ -82,9 +87,9 @@ export default function TiresAndBrakes({ wheel }) {
             onChange={() => handleCheckTwo(3)}
           />
         </div>
-        <label className="ml-1 print:text-sm">
-          Tire Tread
-          <input type="text" className="border w-14 ml-2" placeholder=" --" />
+        <label className="ml-1">
+          {brakesArray[1]}
+          <input type="text" className="border w-14 ml-2" placeholder=" --"/>
         </label>
       </div>
 
@@ -113,16 +118,16 @@ export default function TiresAndBrakes({ wheel }) {
             onChange={() => handleCheckThree(3)}
           />
         </div>
-        <label className="ml-1 print:text-sm">
-          Wear
+        <label className="ml-1">
+          {brakesArray[2]}
           <select className="border ml-2" defaultValue="--">
             <option disabled>--</option>
-            <option>Even</option>
-            <option>Uneven</option>
-            <option>Toe</option>
-            <option>Camber</option>
-            <option>Edge</option>
-            <option>Center</option>
+            <option>{wear[0]}</option>
+            <option>{wear[1]}</option>
+            <option>{wear[2]}</option>
+            <option>{wear[3]}</option>
+            <option>{wear[4]}</option>
+            <option>{wear[5]}</option>
           </select>
         </label>
       </div>
@@ -152,16 +157,20 @@ export default function TiresAndBrakes({ wheel }) {
             onChange={() => handleCheckFour(3)}
           />
         </div>
-        <label className="ml-1 print:text-sm">Rotor / Drum</label>
+        <label className="ml-1">
+          {brakesArray[3]}
+          </label>
       </div>
 
       <div>
-        <label>Tire Pressure</label>
+        <label>
+          {brakesArray[4]}
+          </label>
         <br />
-        <label>Before </label>
-        <input type="text" className="border w-11 mr-2" placeholder=" --" />
-        <label>After </label>
-        <input type="text" className="border w-11" placeholder=" --" />
+        <label>{brakesArray[5]}</label>
+        <input type="text" className="border w-11 mr-2" placeholder=" --"/>
+        <label>{brakesArray[6]} </label>
+        <input type="text" className="border w-11" placeholder=" --"/>
       </div>
     </div>
   );

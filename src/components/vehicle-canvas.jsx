@@ -1,11 +1,16 @@
 import React, { useRef, useEffect } from "react";
 import PriorDamage from "../images/prior-damage.png";
+import { useTranslation } from "react-i18next";
 
 export default function VehicleCanvas() {
   const canvasRef = useRef(null);
   const ctxRef = useRef(null);
   const coord = useRef({ x: 0, y: 0 });
   const paint = useRef(false);
+
+  const { t } = useTranslation();
+  const heading = t("headings", { returnObjects: true });
+  const misc = t("misc", { returnObjects: true });
 
   const drawImage = () => {
     const img = new Image();
@@ -98,17 +103,20 @@ export default function VehicleCanvas() {
   };
 
   return (
-    <div className="w-full mx-auto border">
+    <div className="w-[50%] mx-auto border">
       <h2 className="bg-black text-white w-full flex justify-center">
-        Prior Body Damage (Draw with mouse or touch)
+        {heading[3]}
       </h2>
       <canvas
         ref={canvasRef}
         id="canvas"
         className="mx-auto rounded-md touch-none"
       ></canvas>
-      <button onClick={clearCanvas} className="border p-1 m-2 w-20 rounded-xl border-black shadow-md">
-        Clear
+      <button
+        onClick={clearCanvas}
+        className="border p-1 m-2 w-20 rounded-xl border-black shadow-md"
+      >
+        {misc[3]}
       </button>
     </div>
   );

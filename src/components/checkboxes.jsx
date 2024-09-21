@@ -8,7 +8,7 @@ export default function CheckBoxes({ item }) {
   };
 
   return (
-    <div className="flex border border-black w-full">
+    <div className="flex border border-black w-screen sm:w-full">
       <div className="bg-green-500 h-full w-8 p-1 justify-center flex">
         <input
           type="checkbox"
@@ -33,7 +33,7 @@ export default function CheckBoxes({ item }) {
           onChange={() => handleCheck(3)}
         />
       </div>
-      <label className="text-left w-full pl-1 py-[0.1rem] my-auto print:text-sm sm:print:text-sm">{item}</label>
+      <label className="text-left w-full pl-1 py-[0.1rem] my-auto print:text-sm">{item}</label>
     </div>
   );
 }

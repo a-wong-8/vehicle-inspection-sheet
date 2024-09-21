@@ -17,7 +17,7 @@ function App() {
   const heading = t("headings", { returnObjects: true });
 
   return (
-    <div className="App sm:print:text-sm">
+    <div className="App">
       <Navbar />
 
       <div>
@@ -49,7 +49,7 @@ function App() {
             </div>
           ) : (
             <>
-              <h2 className="flex basis 1/3 mx-0 bg-black text-white w-full justify-center">
+              <h2 className="flex mx-0 bg-black text-white w-full justify-center">
                 {Object.values(item)}
               </h2>
               <br />

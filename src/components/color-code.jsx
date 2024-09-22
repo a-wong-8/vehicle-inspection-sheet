@@ -5,7 +5,7 @@ export default function ColorCode() {
   const heading = t("headings", { returnObjects: true });
 
   return (
-    <div className="flex flex-col lg:w-[69rem] mx-auto">
+    <div className="flex flex-col lg:w-[69rem] mx-auto print:text-sm">
       <h2 className="font-semibold bg-green-500">{heading[0]}</h2>
       <h2 className="font-semibold bg-yellow-500">{heading[1]}</h2>
       <h2 className="font-semibold bg-red-500">{heading[2]}</h2>

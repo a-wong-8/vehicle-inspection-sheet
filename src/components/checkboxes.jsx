@@ -8,7 +8,7 @@ export default function CheckBoxes({ item }) {
   };
 
   return (
-    <div className="flex border border-black w-screen sm:w-full">
+    <div className="flex border border-black w-screen sm:w-full print:w-full">
       <div className="bg-green-500 h-full w-8 p-1 justify-center flex">
         <input
           type="checkbox"

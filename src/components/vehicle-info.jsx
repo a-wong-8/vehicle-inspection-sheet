@@ -35,7 +35,7 @@ export default function VehicleInfo() {
         <input type="text" className="w-52 my-2 border border-black rounded" />
 
         <label className="pl-4">{form[6]}</label>
-        <input type="text" className="w-16 my-2 border border-black rounded" />
+        <input type="text" className="w-24 my-2 border border-black rounded" />
 
         <label className="pl-4">{form[7]}</label>
         <input

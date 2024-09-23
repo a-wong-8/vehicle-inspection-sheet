@@ -107,7 +107,7 @@ export default function VehicleCanvas() {
       canvas.removeEventListener("touchend", stopPainting);
       canvas.removeEventListener("touchmove", sketch);
     };
-  }, []);
+  });
 
   const clearCanvas = () => {
     const ctx = ctxRef.current;

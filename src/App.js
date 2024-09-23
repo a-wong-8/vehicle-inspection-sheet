@@ -28,9 +28,9 @@ function App() {
         <ColorCode />
       </div>
 
+      {/* Vehicle canvas and tires/brakes */}
       <div className="lg:w-[69rem] print:w-[69rem] mx-auto lg:flex print:flex">
         <VehicleCanvas />
-
         <section className="md:flex md:flex-wrap print:flex print:flex-wrap lg:w-[50%] print:w-[50%]">
           <h2 className="bg-black text-white w-full lg:flex justify-center border-t border-r">
             {heading[4]}
@@ -41,6 +41,7 @@ function App() {
         </section>
       </div>
 
+      {/* Checkboxes */}
       <div className="flex flex-wrap lg:w-[69rem] print:w-[69rem] mx-auto rounded-lg">
         {mpiArray.map((item, index) =>
           typeof item !== "object" ? (

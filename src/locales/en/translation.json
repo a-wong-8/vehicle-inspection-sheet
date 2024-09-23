@@ -63,5 +63,5 @@
     "Prior Body Damage (Draw with mouse or touch)",
     "Brakes and Tires"
   ],
-  "misc": ["Language", "Print", "Enter notes here...", "Clear"]
+  "misc": ["Language", "Print", "Enter notes here...", "Clear", "Undo"]
 }

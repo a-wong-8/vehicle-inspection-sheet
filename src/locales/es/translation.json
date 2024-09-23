@@ -70,5 +70,5 @@
     "Daños previos en la carrocería (Dibujar con el ratón o el tacto)",
     "Frenos y neumáticos"
   ],
-  "misc": ["Idioma", "Imprimir", "Ingrese notas aquí...", "Limpiar"]
+  "misc": ["Idioma", "Imprimir", "Ingrese notas aquí...", "Limpiar", "Deshacer"]
 }

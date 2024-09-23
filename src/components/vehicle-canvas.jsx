@@ -154,8 +154,10 @@ export default function VehicleCanvas() {
         </button>
         <button
           onClick={clearCanvas}
-          className="border p-1 m-2 w-20 rounded-xl border-black shadow-md"
-        >
+          disabled={!isUndoAvailable}
+          className={`border p-1 m-2 w-20 rounded-xl border-black shadow-md ${
+            !isUndoAvailable ? "opacity-50" : ""
+          }`}        >
           {misc[3]}
         </button>
       </div>

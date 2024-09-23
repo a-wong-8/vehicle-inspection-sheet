@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect, useState, useCallback } from "react";
 import PriorDamage from "../images/prior-damage.png";
 import { useTranslation } from "react-i18next";
 
@@ -14,7 +14,7 @@ export default function VehicleCanvas() {
   const heading = t("headings", { returnObjects: true });
   const misc = t("misc", { returnObjects: true });
 
-  const drawImage = () => {
+  const drawImage = useCallback(()=> {
     const img = new Image();
     const ctx = ctxRef.current;
     img.src = PriorDamage;
@@ -22,7 +22,7 @@ export default function VehicleCanvas() {
       ctx.drawImage(img, 0, 0, ctx.canvas.width, ctx.canvas.height);
       saveHistory(); // Save initial image to history
     };
-  };
+  },[]);
 
   const saveHistory = () => {
     const canvas = canvasRef.current;
@@ -107,7 +107,7 @@ export default function VehicleCanvas() {
       canvas.removeEventListener("touchend", stopPainting);
       canvas.removeEventListener("touchmove", sketch);
     };
-  });
+  },[drawImage]);
 
   const clearCanvas = () => {
     const ctx = ctxRef.current;

@@ -115,6 +115,7 @@ export default function VehicleCanvas() {
       ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
       drawImage();
     }
+    setIsUndoAvailable(false);
   };
 
   const undoLast = () => {

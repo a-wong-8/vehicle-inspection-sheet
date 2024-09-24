@@ -116,6 +116,7 @@ export default function VehicleCanvas() {
       drawImage();
     }
     setIsUndoAvailable(false);
+    historyRef.current = [];
   };
 
   const undoLast = () => {

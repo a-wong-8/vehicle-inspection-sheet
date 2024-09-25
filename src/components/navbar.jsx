@@ -31,11 +31,11 @@ export default function Navbar() {
       <h1 className="font-bold text-sm md:text-lg my-auto">
         Multi-Point Inspection Sheet
       </h1>
-      <span className="md:mr-2 md:p-1 my-auto ">
+      <span className="mr-1 md:mr-2 md:p-1 my-auto ">
         <Dropdown />
         <button
           onClick={print}
-          className="hover:text-gray-400 text-sm md:text-base"
+          className="hover:text-gray-400 text-sm md:text-base hidden sm:inline"
         >
           ・{misc[1]}
         </button>

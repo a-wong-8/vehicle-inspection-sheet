@@ -5,7 +5,7 @@ export default function Footer() {
   const [showModalPrivacyPolicy, setShowModalPrivacyPolicy] = useState(false);
 
   return (
-    <footer className="flex p-1 justify-center print:hidden text-xs ">
+    <footer className="flex p-1 justify-center print:hidden text-xs relative bottom-0 left-0 mt-[9%] clear-both border-t">
       <button
         className="hover:text-gray-400"
         onClick={() => setShowModalPrivacyPolicy(true)}
@@ -42,14 +42,8 @@ export default function Footer() {
                 {/*body*/}
 
                 <div className="flex w-full items-center justify-center text-white">
-                  <div className="w-full px-10 text-left">
-                    <h2>1. What Information Do We Collect?</h2>
-                    <p>
-                      We DO NOT collect any personal information that you
-                      provide.
-                    </p>
-                    <h3>Information automatically collected</h3>
-                    <p></p>
+                  <div className="w-full px-10 py-5 text-left text-base">
+                    <h2>Coming soon ...</h2>
                   </div>
                 </div>
               </div>

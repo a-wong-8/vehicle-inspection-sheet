@@ -23,11 +23,6 @@ export default function Navbar() {
   //   });
   // };
 
-  // let repairOrder;
-  // if (document.querySelector("#ro").value) {
-  //   repairOrder = document.querySelector("#ro").value;
-  // }
-
   // const clear = () => {
   //   if (window.confirm("Clear entire sheet?")) {
   //     window.location.reload();

@@ -71,5 +71,17 @@
     "Frenos y neumáticos"
   ],
   "footer": ["Política de privacidad", "Contáctanos"],
-  "misc": ["Idioma", "Imprimir", "Ingrese notas aquí...", "Limpiar", "Deshacer"]
+  "misc": [
+    "Idioma",
+    "Imprimir",
+    "Ingrese notas aquí...",
+    "Limpiar",
+    "Deshacer"
+  ],
+  "privacyPolicy": [
+    "Esta página se utiliza para informar a los visitantes del sitio web sobre nuestras políticas con respecto a la recopilación, el uso y la divulgación de Información Personal si alguien decide utilizar nuestro Servicio, el sitio web.",
+    "Si eliges utilizar nuestro Servicio, entonces aceptas la recopilación y el uso de información en relación con esta política. No recopilamos ninguna Información Personal en este sitio web.",
+    "Recopilación y Uso de Información - Datos de Registro",
+    "Queremos informarte que cada vez que visitas nuestro Servicio, recopilamos información que tu navegador nos envía, llamada Datos de Registro. Estos Datos de Registro pueden incluir información como la dirección de Protocolo de Internet (\"IP\") de tu computadora, la versión del navegador, las páginas de nuestro Servicio que visitas, la fecha y hora de tu visita, el tiempo que pasas en esas páginas y otras estadísticas."
+  ]
 }

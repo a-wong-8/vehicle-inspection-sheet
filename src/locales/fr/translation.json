@@ -77,5 +77,11 @@
     "Entrez vos notes ici...",
     "Effacer",
     "Défaire"
+  ],
+  "privacyPolicy": [
+    "Cette page est utilisée pour informer les visiteurs du site web concernant nos politiques de collecte, d'utilisation et de divulgation des Informations Personnelles si quelqu'un décide d'utiliser notre Service, le site web.",
+    "Si vous choisissez d'utiliser notre Service, vous acceptez alors la collecte et l'utilisation des informations conformément à cette politique. Nous ne collectons aucune Information Personnelle sur ce site web.",
+    "Collecte et Utilisation des Informations - Données de Connexion",
+    "Nous souhaitons vous informer qu'à chaque fois que vous visitez notre Service, nous collectons des informations que votre navigateur nous envoie, appelées Données de Connexion. Ces Données de Connexion peuvent inclure des informations telles que l'adresse de Protocole Internet (\"IP\") de votre ordinateur, la version du navigateur, les pages de notre Service que vous visitez, la date et l'heure de votre visite, le temps passé sur ces pages, ainsi que d'autres statistiques."
   ]
 }

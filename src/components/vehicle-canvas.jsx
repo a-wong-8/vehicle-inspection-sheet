@@ -148,7 +148,7 @@ export default function VehicleCanvas() {
         <button
           onClick={undoLast}
           disabled={!isUndoAvailable} // Disable button if no undo available
-          className={`border p-1 m-2 w-20 rounded-xl border-black shadow-md ${
+          className={`border p-1 m-2 w-20 rounded-xl border-black shadow-md print:hidden ${
             !isUndoAvailable ? "opacity-50" : ""
           }`}
         >
@@ -157,7 +157,7 @@ export default function VehicleCanvas() {
         <button
           onClick={clearCanvas}
           disabled={!isUndoAvailable}
-          className={`border p-1 m-2 w-20 rounded-xl border-black shadow-md ${
+          className={`border p-1 m-2 w-20 rounded-xl border-black shadow-md print:hidden ${
             !isUndoAvailable ? "opacity-50" : ""
           }`}        >
           {misc[3]}

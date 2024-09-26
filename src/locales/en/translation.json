@@ -63,6 +63,7 @@
     "Prior Body Damage (Draw with mouse or touch)",
     "Brakes and Tires"
   ],
+  "footer" : ["Privacy Policy", "Contact Us"],
   "misc": ["Language", "Print", "Enter notes here...", "Clear", "Undo"],
   "privacyPolicy": [""]
 }

@@ -70,5 +70,12 @@
     "Dommages corporels antérieurs (Dessiner avec la souris ou le toucher)",
     "Freins et pneus"
   ],
-  "misc": ["Langue", "Imprimer", "Entrez vos notes ici...", "Effacer", "Défaire"]
+  "footer": ["Politique de confidentialité", "Contactez-nous"],
+  "misc": [
+    "Langue",
+    "Imprimer",
+    "Entrez vos notes ici...",
+    "Effacer",
+    "Défaire"
+  ]
 }

@@ -1,8 +1,11 @@
-import { useState } from "react";
+import { useState,  } from "react";
 import awr from "../images/awr-footer.png";
+import { useTranslation } from "react-i18next";
 
 export default function Footer() {
   const [showModalPrivacyPolicy, setShowModalPrivacyPolicy] = useState(false);
+  const { t } = useTranslation();
+  const footer = t('footer', { returnObjects: true });
 
   return (
     <footer className="flex p-1 justify-center print:hidden text-xs relative bottom-0 left-0 mt-[9%] clear-both border-t">
@@ -10,11 +13,11 @@ export default function Footer() {
         className="hover:text-gray-400"
         onClick={() => setShowModalPrivacyPolicy(true)}
       >
-        Privacy Policy ・
+        {footer[0]} ・
       </button>
       <img src={awr} alt="awr auto group logo" className="h-4" />
       <a href="mailto:awrautogroup@gmail.com" className="hover:text-gray-400">
-        ・ Contact Us
+        ・ {footer[1]}
       </a>
 
       {showModalPrivacyPolicy ? (

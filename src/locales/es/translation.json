@@ -64,9 +64,9 @@
     "Orden de reparación: "
   ],
   "headings": [
-    "Revisado y en buen estado",
-    "Podría necesitar atención futura",
-    "Requiere atención inmediata",
+    "Revisado y en buen estado: caja izquierda",
+    "Puede necesitar atención futura: caja del medio",
+    "Requiere atención inmediata: caja derecha",
     "Daños previos en la carrocería (Dibujar con el ratón o el tacto)",
     "Frenos y neumáticos"
   ],

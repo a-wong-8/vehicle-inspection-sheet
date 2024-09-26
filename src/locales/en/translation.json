@@ -57,9 +57,9 @@
     "Repair Order: "
   ],
   "headings": [
-    "Checked and Okay",
-    "May need future attention",
-    "Requries immediate attention",
+    "Checked and Okay: left box",
+    "May need future attention: middle box",
+    "Requries immediate attention: right box",
     "Prior Body Damage (Draw with mouse or touch)",
     "Brakes and Tires"
   ],

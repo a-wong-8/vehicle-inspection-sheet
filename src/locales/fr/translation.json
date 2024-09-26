@@ -64,11 +64,17 @@
     "Ordre de réparation: "
   ],
   "headings": [
-    "Vérifié et en bon état",
-    "Peut nécessiter une attention future",
-    "Nécessite une attention immédiate",
+    "Vérifié et en bon état : case de gauche",
+    "Peut nécessiter une attention future : case du milieu",
+    "Nécessite une attention immédiate : case de droite",
     "Dommages corporels antérieurs (Dessiner avec la souris ou le toucher)",
     "Freins et pneus"
   ],
-  "misc": ["Langue", "Imprimer", "Entrez vos notes ici...", "Effacer", "Défaire"]
+  "misc": [
+    "Langue",
+    "Imprimer",
+    "Entrez vos notes ici...",
+    "Effacer",
+    "Défaire"
+  ]
 }

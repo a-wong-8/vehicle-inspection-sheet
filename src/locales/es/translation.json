@@ -70,5 +70,6 @@
     "Daños previos en la carrocería (Dibujar con el ratón o el tacto)",
     "Frenos y neumáticos"
   ],
+  "footer": ["Política de privacidad", "Contáctanos"],
   "misc": ["Idioma", "Imprimir", "Ingrese notas aquí...", "Limpiar", "Deshacer"]
 }

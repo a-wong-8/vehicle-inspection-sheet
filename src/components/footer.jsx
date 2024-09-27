@@ -49,7 +49,7 @@ export default function Footer() {
               <div className="relative flex w-full flex-col rounded-xl border-0 bg-black bg-opacity-85 shadow-lg">
                 {/* Header */}
                 <div className="flex w-full rounded-t border-b border-solid border-gray-400 text-white">
-                  <h2 className="mt-[30px] mx-auto mb-[30px] text-base">
+                  <h2 className="mt-[30px] mx-auto mb-[30px] text-base font-bold">
                     {footer[0]}
                   </h2>
 

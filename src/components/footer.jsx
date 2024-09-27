@@ -43,7 +43,7 @@ export default function Footer() {
             onClick={handleCloseModal} // Close modal when clicking outside
           >
             <div
-              className="relative mx-auto h-[500px] w-[300px] md:w-[500px] lg:w-[1000px]"
+              className="relative mx-auto my-auto h-3/4 w-[300px] md:w-[500px] lg:w-[1000px]"
               onClick={handleModalClick} // Stop propagation when clicking inside modal
             >
               <div className="relative flex w-full flex-col rounded-xl border-0 bg-black bg-opacity-85 shadow-lg">

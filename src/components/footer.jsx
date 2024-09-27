@@ -39,7 +39,7 @@ export default function Footer() {
 
           {/* Modal */}
           <div
-            className="fixed inset-0 z-[111] flex items-center justify-center overflow-scroll"
+            className="fixed -inset-4 z-[111] flex items-center justify-center overflow-scroll"
             onClick={handleCloseModal} // Close modal when clicking outside
           >
             <div

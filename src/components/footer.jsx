@@ -33,7 +33,7 @@ export default function Footer() {
       {showModalPrivacyPolicy && (
         <>
           <div
-            className="fixed inset-0 z-[110] bg-black opacity-20"
+            className="fixed inset-0 z-[110] bg-black opacity-10"
             onClick={handleCloseModal}
           ></div>
 
@@ -46,7 +46,7 @@ export default function Footer() {
               className="relative mx-auto my-auto h-3/4 w-[300px] md:w-[500px] lg:w-[1000px]"
               onClick={handleModalClick} // Stop propagation when clicking inside modal
             >
-              <div className="relative flex w-full flex-col rounded-xl border-0 bg-black bg-opacity-85 shadow-lg">
+              <div className="relative flex w-full flex-col rounded-xl border-0 bg-black bg-opacity-75 shadow-lg backdrop-blur-sm">
                 {/* Header */}
                 <div className="flex w-full rounded-t border-b border-solid border-gray-400 text-white">
                   <h2 className="mt-[30px] mx-auto mb-[30px] text-base font-bold">

@@ -46,7 +46,7 @@ export default function Footer() {
               className="relative mx-auto h-3/4 md:h-auto w-[300px] md:w-[500px] lg:w-[1000px]"
               onClick={handleModalClick} // Stop propagation when clicking inside modal
             >
-              <div className="relative flex w-full flex-col rounded-xl border-0 bg-black bg-opacity-75 shadow-lg backdrop-blur-sm">
+              <div className="relative flex w-full flex-col rounded-xl border-0 bg-black bg-opacity-75 shadow-2xl backdrop-blur-lg">
                 {/* Header */}
                 <div className="flex w-full rounded-t border-b border-solid border-gray-400 text-white">
                   <h2 className="mt-[30px] mx-auto mb-[30px] text-base font-bold">

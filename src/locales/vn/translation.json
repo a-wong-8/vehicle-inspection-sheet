@@ -1,0 +1,75 @@
+{
+    "mpi": [
+      { "1": "Nội Thất / Ngoại Thất" },
+      "Đèn Pha, Đèn Hậu, Đèn Xi Nhan, Đèn Phanh, Đèn Cảnh Báo, Đèn Ngoại Thất, Đèn Biển Số",
+      "Vận Hành Cần Gạt Nước/ Nước Rửa Kính, Lưỡi Gạt Nước",
+      "Tình Trạng Kính Chắn Gió: Nứt / Vỡ / Lõm",
+      "Gương / Kính",
+      "Điều Chỉnh Phanh Khẩn Cấp",
+      "Hoạt Động Còi Xe",
+      "Gioăng Nắp Bình Xăng",
+      "Máy Lạnh (nếu có)",
+      "Hoạt Động Ly Hợp (nếu có)",
+      "Đèn Lùi Trái / Phải",
+      "Đèn Cảnh Báo Trên Bảng Điều Khiển",
+      "Thảm Lót / Ghế Nệm / Thảm Sàn",
+      { "2": "Dưới Gầm Xe" },
+      "Giảm Xóc / Hệ Thống Treo / Thanh Chống",
+      "Hộp Lái, Liên Kết, Khớp Bi, Bụi Bao",
+      "Bộ Giảm Thanh, Ống Xả/ Giá Đỡ, Bộ Chuyển Đổi Catalytic",
+      "Dầu Động Cơ và Rò Rỉ Chất Lỏng",
+      "Dây Phanh, Ống Dẫn, Dây Cáp Phanh Tay",
+      "Càng Lái, Khớp CV, Khớp U, Liên Kết Hộp Số (nếu có)",
+      "Hộp Số, Bộ Vi Sai, Hộp Chuyển Đổi (Kiểm Tra Mức Dầu, Tình Trạng Dầu, và Rò Rỉ Dầu)",
+      "Đường Ống và Kết Nối Dầu, Đai Bình Chứa Dầu, Hệ Thống Ống Thông Hơi Bình Xăng",
+      "Kiểm Tra Bu Lông và Đai Ốc Trên Thân Xe và Khung Gầm",
+      { "3": "Dưới Nắp Ca-pô" },
+      "Mức Chất Lỏng: Dầu, Nước Làm Mát, Ắc Quy, Dầu Trợ Lực Lái, Dầu Phanh, Nước Rửa Kính, Dầu Hộp Số Tự Động",
+      "Lọc Gió Động Cơ",
+      "Dây Cu-roa (tình trạng và độ căng)",
+      "Ống Nước Hệ Thống Làm Mát, Ống Máy Sưởi, Ống Điều Hòa Không Khí và Kết Nối",
+      "Lõi Tản Nhiệt, Bộ Ngưng Tụ Máy Lạnh",
+      "Mức Nước Bình Chứa Nước Làm Mát / Tình Trạng",
+      "Mức Dầu Ly Hợp / Tình Trạng (nếu có)",
+      { "4": "Ắc Quy" },
+      "Cọc / Dây Điện / Giá Đỡ Ắc Quy",
+      "Tình Trạng Ắc Quy / Dòng Khởi Động Lạnh"
+    ],
+    "quadrants": ["Trước Trái", "Trước Phải", "Sau Trái", "Sau Phải"],
+    "brakes": [
+      "Mòn Phanh",
+      "Lốp Xe",
+      "Mòn",
+      "Đĩa Phanh / Tang Trống",
+      "Áp Suất Lốp",
+      "Trước",
+      "Sau"
+    ],
+    "wear": ["Đều", "Không Đều", "Góc Toe", "Góc Camber", "Cạnh", "Trung Tâm"],
+    "form": [
+      "Tên Đại Lý: ",
+      "Kỹ Thuật Viên: ",
+      "Tên Khách Hàng: ",
+      "Năm/Hiệu/Model: ",
+      "Số Công-tơ-mét: ",
+      "Số VIN: ",
+      "Biển Số Xe: ",
+      "Lệnh Sửa Chữa: "
+    ],
+    "headings": [
+      "Đã Kiểm Tra và Tốt: ô bên trái",
+      "Có thể cần chú ý trong tương lai: ô giữa",
+      "Cần chú ý ngay lập tức: ô bên phải",
+      "Thiệt Hại Thân Xe Trước Đó (Vẽ bằng chuột hoặc cảm ứng)",
+      "Phanh và Lốp"
+    ],
+    "footer": ["Chính Sách Bảo Mật", "Liên Hệ Chúng Tôi"],
+    "misc": ["Ngôn Ngữ", "In", "Nhập ghi chú tại đây...", "Xóa", "Hoàn Tác"],
+    "privacyPolicy": [
+      "Trang này được sử dụng để thông báo cho khách truy cập trang web về các chính sách của chúng tôi liên quan đến việc thu thập, sử dụng và tiết lộ Thông Tin Cá Nhân nếu bất kỳ ai quyết định sử dụng Dịch Vụ của chúng tôi, trang web.",
+      "Nếu bạn chọn sử dụng Dịch Vụ của chúng tôi, thì bạn đồng ý với việc thu thập và sử dụng thông tin liên quan đến chính sách này. Chúng tôi không thu thập bất kỳ Thông Tin Cá Nhân nào trên trang web này.",
+      "Thu Thập và Sử Dụng Thông Tin - Dữ Liệu Nhật Ký",
+      "Chúng tôi muốn thông báo cho bạn rằng bất cứ khi nào bạn truy cập Dịch Vụ của chúng tôi, chúng tôi thu thập thông tin mà trình duyệt của bạn gửi cho chúng tôi gọi là Dữ Liệu Nhật Ký. Dữ Liệu Nhật Ký này có thể bao gồm thông tin như địa chỉ Giao Thức Internet (\"IP\") của máy tính của bạn, phiên bản trình duyệt, các trang của Dịch Vụ của chúng tôi mà bạn truy cập, thời gian và ngày bạn truy cập, thời gian bạn ở trên các trang đó và các thống kê khác."
+    ]
+  }
+  

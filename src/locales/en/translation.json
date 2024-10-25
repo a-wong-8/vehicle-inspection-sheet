@@ -61,7 +61,8 @@
     "May need future attention: middle box",
     "Requries immediate attention: right box",
     "Prior Body Damage (Draw with mouse or touch)",
-    "Brakes and Tires"
+    "Brakes and Tires",
+    "Overall Condition:"
   ],
   "footer": ["Privacy Policy", "Contact Us"],
   "misc": ["Language", "Print", "Enter notes here...", "Clear", "Undo"],

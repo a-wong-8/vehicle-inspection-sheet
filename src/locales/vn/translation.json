@@ -40,7 +40,7 @@
       "Mòn Phanh",
       "Lốp Xe",
       "Mòn",
-      "Đĩa Phanh / Tang Trống",
+      "Phanh / Tang Trống",
       "Áp Suất Lốp",
       "Trước",
       "Sau"
@@ -61,7 +61,8 @@
       "Có thể cần chú ý trong tương lai: ô giữa",
       "Cần chú ý ngay lập tức: ô bên phải",
       "Thiệt Hại Thân Xe Trước Đó (Vẽ bằng chuột hoặc cảm ứng)",
-      "Phanh và Lốp"
+      "Phanh và Lốp",
+      "Tình trạng chung"
     ],
     "footer": ["Chính Sách Bảo Mật", "Liên Hệ Chúng Tôi"],
     "misc": ["Ngôn Ngữ", "In", "Nhập ghi chú tại đây...", "Xóa", "Hoàn Tác"],

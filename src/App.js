@@ -28,7 +28,6 @@ function App() {
       return newScores;
     });
   };
-
   // Calculate the average condition score, excluding unselected items (0)
   const selectedScores = colorScores.filter((score) => score > 0);
   const averageCondition = selectedScores.length
@@ -36,8 +35,6 @@ function App() {
         selectedScores.reduce((a, b) => a + b, 0) / selectedScores.length
       ).toFixed(2)
     : 0;
-
-  console.log(averageCondition);
 
   return (
     <div className="App">

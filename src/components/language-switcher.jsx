@@ -16,6 +16,7 @@ function LanguageSwitcher() {
       <button onClick={() => changeLanguage('fr')} className='hover:text-gray-400 p-1'>Français</button>
       <button onClick={() => changeLanguage('jp')} className='hover:text-gray-400 p-1'>日本語</button>
       <button onClick={() => changeLanguage('vn')} className='hover:text-gray-400 p-1'>Tiếng Việt</button>
+      <button onClick={() => changeLanguage('hn')} className='hover:text-gray-400 p-1'>हिंदी</button>
     </li>
   );
 }

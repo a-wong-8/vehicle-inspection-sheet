@@ -28,9 +28,7 @@ export default function Navbar() {
       <span className="ml-2 my-auto p-1 text-sm md:text-base sm:print:text-sm">
         {date}
       </span>
-      <h1 className="font-bold text-sm md:text-lg my-auto">
-        Multi-Point Inspection Sheet
-      </h1>
+      <h1 className="font-bold text-sm md:text-lg my-auto">{misc[5]}</h1>
       <span className="mr-1 md:mr-2 md:p-1 my-auto ">
         <Dropdown />
         <button

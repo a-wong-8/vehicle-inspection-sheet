@@ -65,7 +65,22 @@
     "Overall Condition:"
   ],
   "footer": ["Privacy Policy", "Contact Us"],
-  "misc": ["Language", "Print", "Enter notes here...", "Clear", "Undo", "Multi-Point Inspection Sheet"],
+  "misc": [
+    "Language",
+    "Print",
+    "Enter notes here...",
+    "Clear",
+    "Undo",
+    "Multi-Point Inspection Sheet"
+  ],
+  "images": {
+    "heading": "Prior Body Damage (Draw with mouse or touch)",
+    "type": "Type",
+    "sedan": "Sedan",
+    "truck": "Truck",
+    "compact": "Compact",
+    "suv": "SUV"
+  },
   "privacyPolicy": [
     "This page is used to inform website visitors regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our Service, the website.",
     "If you choose to use our Service, then you agree to the collection and use of information in relation with this policy. We do not collect any Personal Information on this website.",

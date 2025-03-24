@@ -12,6 +12,7 @@ export default function ColorCode({ conditionAverage }) {
       <h2 className="font-semibold bg-gray-300 items-center flex justify-center">
         {heading[5]}
         <input
+          readOnly
           type="range"
           min="100"
           max="300"

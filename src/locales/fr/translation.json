@@ -72,6 +72,14 @@
     "État général"
   ],
   "footer": ["Politique de confidentialité", "Contactez-nous"],
+  "images": {
+    "heading": "Dommages corporels antérieurs (Dessiner avec la souris ou le toucher)",
+    "type": "Type",
+    "sedan": "Berline",
+    "truck": "Camion",
+    "compact": "Compacte",
+    "suv": "SUV"
+  },
   "misc": [
     "Langue",
     "Imprimer",

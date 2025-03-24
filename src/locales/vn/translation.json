@@ -65,6 +65,14 @@
     "Tình trạng chung"
   ],
   "footer": ["Chính Sách Bảo Mật", "Liên Hệ Chúng Tôi"],
+  "images": {
+    "heading": "Hư hỏng thân xe trước đó (Vẽ bằng chuột hoặc chạm)",
+    "type": "Loại",
+    "sedan": "Xe sedan",
+    "truck": "Xe tải",
+    "compact": "Xe cỡ nhỏ",
+    "suv": "SUV"
+  },
   "misc": [
     "Ngôn Ngữ",
     "In",

@@ -72,6 +72,14 @@
     "Estado general"
   ],
   "footer": ["Política de privacidad", "Contáctanos"],
+  "images": {
+    "heading": "Daños previos en la carrocería (Dibujar con el ratón o el tacto)",
+    "type": "Tipo",
+    "sedan": "Sedán",
+    "truck": "Camión",
+    "compact": "Compacto",
+    "suv": "SUV"
+  },
   "misc": [
     "Idioma",
     "Imprimir",

@@ -1,5 +1,8 @@
 import React, { useRef, useEffect, useState, useCallback } from "react";
-import PriorDamage from "../images/prior-damage.png";
+import PriorDamage from "../images/default.png";
+import Truck from "../images/truck.png";
+import Suv from "../images/suv.png";
+import Compact from "../images/compact.png";
 import { useTranslation } from "react-i18next";
 
 export default function VehicleCanvas() {
@@ -9,20 +12,22 @@ export default function VehicleCanvas() {
   const paint = useRef(false);
   const historyRef = useRef([]); // Store canvas history
   const [isUndoAvailable, setIsUndoAvailable] = useState(false); // State to enable/disable Undo button
+  const [image, setImg] = useState(PriorDamage);
 
   const { t } = useTranslation();
   const heading = t("headings", { returnObjects: true });
   const misc = t("misc", { returnObjects: true });
+  const images = t("images", { returnObjects: true });
 
-  const drawImage = useCallback(()=> {
+  const drawImage = useCallback(() => {
     const img = new Image();
     const ctx = ctxRef.current;
-    img.src = PriorDamage;
+    img.src = image;
     img.onload = () => {
       ctx.drawImage(img, 0, 0, ctx.canvas.width, ctx.canvas.height);
       saveHistory(); // Save initial image to history
     };
-  },[]);
+  }, [image]);
 
   const saveHistory = () => {
     const canvas = canvasRef.current;
@@ -107,7 +112,7 @@ export default function VehicleCanvas() {
       canvas.removeEventListener("touchend", stopPainting);
       canvas.removeEventListener("touchmove", sketch);
     };
-  },[drawImage]);
+  }, [drawImage]);
 
   const clearCanvas = () => {
     const ctx = ctxRef.current;
@@ -145,6 +150,23 @@ export default function VehicleCanvas() {
         className="mx-auto rounded-md touch-none"
       ></canvas>
       <div className="flex justify-center space-x-2">
+        <select
+          defaultValue="Type"
+          onChange={(e) => {
+            const value = e.target.value;
+            setImg(value);
+          }}
+          className={`border p-1 m-2 rounded-xl border-black shadow-md print:hidden`}
+        >
+          <option value="Type" disabled>
+            {images.type}
+          </option>
+          <option value={PriorDamage}>{images.sedan}</option>
+          <option value={Compact}>{images.compact}</option>
+          <option value={Truck}>{images.truck}</option>
+          <option value={Suv}>{images.suv}</option>
+        </select>
+
         <button
           onClick={undoLast}
           disabled={!isUndoAvailable} // Disable button if no undo available
@@ -159,7 +181,8 @@ export default function VehicleCanvas() {
           disabled={!isUndoAvailable}
           className={`border p-1 m-2 w-20 rounded-xl border-black shadow-md print:hidden ${
             !isUndoAvailable ? "opacity-50" : ""
-          }`}        >
+          }`}
+        >
           {misc[3]}
         </button>
       </div>

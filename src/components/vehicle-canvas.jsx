@@ -91,7 +91,7 @@ export default function VehicleCanvas() {
 
     resize(); // Resize on load
 
-    window.addEventListener("resize", resize);
+    // window.addEventListener("resize", resize);
 
     // Mouse Events
     canvas.addEventListener("mousedown", startPainting);
